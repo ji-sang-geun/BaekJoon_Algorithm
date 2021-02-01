@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int find_four(int X, int Y) {
