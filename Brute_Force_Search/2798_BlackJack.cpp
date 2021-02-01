@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
 // 재귀 한번 사용해볼 것
+
 int sum(int N, int M) {
 	int* arr = new int[N]; // dynamically allocating
 	int number = 0, max = 0; // initialize
