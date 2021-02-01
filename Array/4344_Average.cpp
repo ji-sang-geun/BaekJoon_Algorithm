@@ -31,6 +31,5 @@ int main(void) {
 		cout.precision(3); // cout << fixed를 제거하고, cout.precision(5)를 사용해도 => 소수점 셋째 자리까지 출력
 		cout << (double)Average_Over(N)<< "%" << endl;
 	}
-
 	return 0; 
 }
