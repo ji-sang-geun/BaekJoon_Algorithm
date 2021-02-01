@@ -20,7 +20,7 @@ int main(void) {
 	cin >> n; // input 
 
 	vector<int> a(n); // vector's size
-
+	
 	for (int i = 0; i < n; i++) { // push to vector
 		cin >> number;
 		a.push_back(number);
