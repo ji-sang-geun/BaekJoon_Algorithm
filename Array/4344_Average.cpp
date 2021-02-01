@@ -6,18 +6,18 @@ double Average_Over(int N) {
 	int Sum_Score = 0; // Initialize
 	int Over = 0;
 
-	for (int j = 0; j < N; j++) { // ��� ã��
+	for (int j = 0; j < N; j++) { // To find Sum of Score
 		cin >> arr[j];
 		Sum_Score = Sum_Score + arr[j];
 	}
 
-	for (int k = 0; k < N; k++) { // ��� �̻��� ��� ã��
+	for (int k = 0; k < N; k++) { // To find over than average
 		if (arr[k] > (double)Sum_Score / N) Over++;
 	}
 
 	delete[] arr;
 
-	return Over / (double)N * 100; // ��ȯ
+	return Over / (double)N * 100; // return
 }
 
 int main(void) {
@@ -28,7 +28,7 @@ int main(void) {
 	for (int i = 0; i < C; i++) {
 		cin >> N; // Student's Number
 		cout << fixed;
-		cout.precision(3); // cout << fixed ���ְ�, cout.precision(5)�ص� �� => �Ҽ��� ��° �ڸ����� ���
+		cout.precision(3); // cout << fixed를 제거하고, cout.precision(5)를 사용해도 => 소수점 셋째 자리까지 출력
 		cout << (double)Average_Over(N)<< "%" << endl;
 	}
 
