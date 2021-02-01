@@ -10,7 +10,6 @@ int find_four(int X, int Y) {
 
 int main(void) {
 	int x = 0, y = 0; // initialize
-
 	cin >> x >> y; 
 	
 	cout << find_four(x, y);
