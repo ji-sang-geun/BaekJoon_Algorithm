@@ -6,18 +6,18 @@ double Average_Over(int N) {
 	int Sum_Score = 0; // Initialize
 	int Over = 0;
 
-	for (int j = 0; j < N; j++) { // Æò±Õ Ã£±â
+	for (int j = 0; j < N; j++) { // ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½
 		cin >> arr[j];
 		Sum_Score = Sum_Score + arr[j];
 	}
 
-	for (int k = 0; k < N; k++) { // Æò±Õ ÀÌ»óÀÎ »ç¶÷ Ã£±â
+	for (int k = 0; k < N; k++) { // ï¿½ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½
 		if (arr[k] > (double)Sum_Score / N) Over++;
 	}
 
 	delete[] arr;
 
-	return Over / (double)N * 100; // ¹ÝÈ¯
+	return Over / (double)N * 100; // ï¿½ï¿½È¯
 }
 
 int main(void) {
@@ -28,7 +28,7 @@ int main(void) {
 	for (int i = 0; i < C; i++) {
 		cin >> N; // Student's Number
 		cout << fixed;
-		cout.precision(3); // cout << fixed ¾ø¾Ö°í, cout.precision(5)ÇØµµ µÊ => ¼Ò¼öÁ¡ ¼ÂÂ° ÀÚ¸®±îÁö Ãâ·Â
+		cout.precision(3); // cout << fixed ï¿½ï¿½ï¿½Ö°ï¿½, cout.precision(5)ï¿½Øµï¿½ ï¿½ï¿½ => ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½Â° ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		cout << (double)Average_Over(N)<< "%" << endl;
 	}
 
