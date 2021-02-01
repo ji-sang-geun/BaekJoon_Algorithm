@@ -11,7 +11,6 @@ long long Sum(vector<int> &a) {
 
 	return IntSum; // return
 }
-
 // 이 부분까지가 정답으로 인정됨.
 
 int main(void) {
