@@ -20,6 +20,8 @@ void Bulk(int* x, int* y, int N) {
 	for (int i = 0; i < N; i++) {
 		cout << arr[i]+1 << " ";
 	}
+
+	delete[] arr;
 }
 
 int main(void) {
@@ -36,6 +38,9 @@ int main(void) {
 	} 
 
 	Bulk(x, y, N);
+
+	delete[] x;
+	delete[] y;
 	
 	return 0;
 }
