@@ -17,7 +17,7 @@ void merge(int* arr, int left, int middle, int right) {
 		if (arr[i] <= arr[j]) { 
 			sort_result[k++] = arr[i++];
 		}
-		else if (arr[i] >= arr[j]) {
+		else if (arr[i] > arr[j]) {
 			sort_result[k++] = arr[j++];
 		}
 	}
