@@ -11,17 +11,21 @@ void counting_sort(int N) {
 
 	for (int i = 0; i < N; i++) {
 		scanf("%d", &num);
-
+		
+		// max를 찾아서 배열 범위 설정
 		if (max < num) {
 			max = num;
 		}
+		// 입력한 num 순서의 count 1증가
 		count_arr[num]++;
 	}
 
 	for (int i = 0; i <= max; i++) {
+		// count_arr[i]가 0이 아니란 것은 정렬할 숫자가 있다는 것을 의미
 		while (count_arr[i] != 0) {
+			// 출력
 			printf("%d \n", i);
-			index++;
+			// count_arr 1 감소
 			count_arr[i]--;
 		}
 	}
