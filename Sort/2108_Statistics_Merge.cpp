@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int arr[500001] = { 0, };
-int sort_arr[500001] = { 0, };
-int count_arr[500001] = { 0, };
+int arr[500001] = { 0, }; // 정렬된 배열
+int sort_arr[500001] = { 0, }; // 임시 배열
+int count_arr[500001] = { 0, }; // 최빈값을 구하기 위한 배열
 
 void merge(int* arr, int left, int middle, int right) {
-	int i = left;
-	int j = middle + 1;
-	int k = left;
+	int i = left; // 정렬된 왼쪽 배열의 index
+	int j = middle + 1; // 정렬된 오른쪽 배열의 index
+	int k = left; // 정렬될 배열의 index
 
 	// merge
 	while (i <= middle && j <= right) {
