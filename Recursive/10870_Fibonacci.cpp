@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int before_1 = 0, before_2 = 1; // 0번째 1번째 
+int before_1 = 0, before_2 = 1; // 0?? 1??
 
 void fibonacci(int start, int n) {
 
 	if (start != n) {
-		if (start % 2 == 1) before_1 = before_1 + before_2; // 홀수 번일 때
-		else if (start % 2 == 0) before_2 = before_1 + before_2; // 짝수 번일 때
-		fibonacci(start + 1, n); // 재귀
+		if (start % 2 == 1) before_1 = before_1 + before_2; // ?? ?? ?
+		else if (start % 2 == 0) before_2 = before_1 + before_2; // ?? ?? ?
+		fibonacci(start + 1, n); // ??
 	}
 	else if (start == n) {
-		if (start % 2 == 1) cout << before_2; // 홀수 마지막
-		else if (start % 2 == 0) cout << before_1; // 짝수 마지막
+		if (start % 2 == 1) cout << before_2; // ?? ???
+		else if (start % 2 == 0) cout << before_1; // ?? ???
 		return; 
 	}
 }
