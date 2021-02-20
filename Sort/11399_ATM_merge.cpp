@@ -10,7 +10,7 @@ void sort(int* arr, int left, int middle, int right) {
 	int j = middle + 1;
 	int k = left;
 	
-	// 복사
+	// 조건에 맞으면 배열에 복사
 	while (i <= middle && j <= right) {
 		if (arr[i] <= arr[j]) {
 			sub_arr[k++] = arr[i++];
